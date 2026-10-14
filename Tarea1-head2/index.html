@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #eef2f7;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #172554;
+            text-align: center;
+        }
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .proyecto {
+            padding: 25px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 12px #0002;
+            transition: transform 0.3s;
+        }
+
+        .proyecto:hover {
+            transform: translateY(-8px);
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .proyectos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Holo</h1>
+
+    <div class="proyectos">
+        <div class="proyecto">
+            <h2>Diseño web</h2>
+            <p>No tengo errores.</p>
+        </div>
+
+        <div class="proyecto">
+            <h2>Programación</h2>
+            <p> Sin comentarios</p>
+        </div>
+
+        <div class="proyecto">
+            <h2>Trabajo en equipo</h2>
+            <p>Un tinto ?.</p>
+        </div>
+    </div>
+</body>
+</html>
